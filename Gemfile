@@ -28,6 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 
 gem "paperclip", "~> 5.0.0.beta1"
+gem 'aws-sdk', '~> 2.3'
 
 gem 'frontend-generators'
 
