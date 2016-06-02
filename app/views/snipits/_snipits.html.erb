@@ -1,0 +1,19 @@
+<div class="container">	
+	<div class="row">
+		<% @snipits.each do |snipit|%>
+	  <div class="col-sm-6 col-md-4">
+	    <div class="thumbnail">
+		      <%= image_tag snipit.image.url(:medium) %>
+		      <div class="caption">
+		        <p><%= snipit.description%></p>
+		        <p>
+		            <%= link_to 'Delete', destroy_snipit_event_path(@event, snipit: snipit), method: :delete, class: "btn btn-danger"%>
+		            <%= link_to 'Events', events_path, class: "btn btn-warning" %>
+		        </p>
+	        
+	      </div>
+	    </div>
+	  </div>
+	  <% end %>
+  </div>
+</div>

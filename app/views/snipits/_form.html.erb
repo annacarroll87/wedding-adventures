@@ -1,0 +1,7 @@
+<div class="container">
+	<%= simple_form_for @snipit, html: {class: 'form-horizontal'}, url: create_snipit_event_path, method: :post do |f| %>				   
+	  <%= f.input :description %>
+	  <%= f.file_field :image %></br>
+	  <%= f.button :submit, 'Share A Memory' %>
+	<% end %>
+</div>

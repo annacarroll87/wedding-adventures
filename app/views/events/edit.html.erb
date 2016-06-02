@@ -1,0 +1,7 @@
+<div class="container">
+	<h2>Edit Event</h2>
+	  <%= simple_form_for @event, url: event_path, method: :patch do |f| %>
+	    <%= f.input :name %>
+	    <%= f.button :submit, 'Update Event' %>
+	  <% end %>
+</div>
